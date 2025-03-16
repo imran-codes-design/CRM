@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Dashboard</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+</head>
+<body>
+    <h2>Customer Management</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody id="customerTable">
+            <!-- Data will be loaded here -->
+        </tbody>
+    </table>
+
+    <h3>Add New Customer</h3>
+    <form action="add_customer.php" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone">
+        <input type="text" name="company" placeholder="Company">
+        <button type="submit">Add Customer</button>
+    </form>
+
+    <script src="/html/javascript/script.js">
+        
+    </script>
+</body>
+</html>
